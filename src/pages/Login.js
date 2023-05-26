@@ -13,9 +13,9 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    const loggeduser = JSON.parse(localStorage.getItem("user"));
-    if (input.email === loggeduser.email && input.password === loggeduser.password) {
-      localStorage.setItem('loggedin', true)
+    const useerlog = JSON.parse(localStorage.getItem("user"));
+    if (input.email === useerlog.email && input.password === useerlog.password) {
+      localStorage.setItem('Login', true)
       navigate('/')
     }
     else {
@@ -29,11 +29,11 @@ function Login() {
       <form onSubmit={handleLogin}>
         <div className="form-group mb-3">
           <label for="exampleFormControlInput1">Email address</label>
-          <input name="email" value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+          <input value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
         </div>
         <div className="form-group mb-3">
           <label for="exampleFormControlInput1">Password</label>
-          <input name="password" value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} type="password" className="form-control" id="exampleFormControlInput1" placeholder="Password" />
+          <input  value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} type="password" className="form-control" id="exampleFormControlInput1" placeholder="Password" />
         </div>
 
 
