@@ -78,25 +78,7 @@ function App() {
     photo : "https://crests.football-data.org/816.svg"
   }
 ]);
-  // useEffect(() => {
-  //    //axios.get(`https://npiregistry.cms.hhs.gov/api/?version=2.1&city=baltimore`)
-  //   //http://api.football-data.org/v4/competitions/&count=${count}`
-  //   // axios.get('https://api.datamuse.com/words?ml=ringing+in+the+ears')
-  //    // axios.get(`https://api.fda.gov/food/enforcement.json?limit=10`)
-  //   //axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=b04350807bfef511722d92175c56e060&language=en-US`)
-  //  // axios.get(`https://api.tvmaze.com/alternatelists/1/alternateepisodes?embed=episodes&_links`)
-  //  // axios.get(`https://api.tvmaze.com/alternatelists/1/alternateepisodes?embed=episodes&_links`)  
-  //   // axios.get(`https://jsonplaceholder.typicode.com/comments`)
-  //   axios.get(`http://api.football-data.org/v4/competitions/`)
-  //   .then(resp => {
-  //      console.log(resp)
-  //      setState(resp.data)})
-  //     .catch(e => console.log(e))
-  // }, [])
-
-  // const getCount = (count) => {
-  //   setCount(count)
-  // }
+  
 
   return (
     <BrowserRouter>
